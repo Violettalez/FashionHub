@@ -1,0 +1,46 @@
+.lastN {
+  width: 381px;
+  img {
+    width: 381px;
+    height: 230px;
+  }
+  h2 {
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #a9a9a9;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-top: 28px;
+    padding-bottom: 37px;
+  }
+  .infoN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    a {
+      border-left: 1px solid #a9a9a9;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #111111;
+      font-family: "Oxygen", sans-serif;
+      line-height: 1.2;
+      text-align: center;
+      padding: 17px 20px;
+    }
+    .date,
+    .comments {
+      p {
+        color: #a9a9a9;
+        font-family: "Open Sans", sans-serif;
+        padding-top: 17px;
+        text-align: center;
+        padding: 17px 18px;
+        .icon {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}

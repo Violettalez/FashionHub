@@ -1,0 +1,246 @@
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  color: white;
+  border: 3px solid white;
+  width: 36px;
+  height: 36px;
+  top: calc(50% - 18px);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.slider1 {
+  background-image: url("./images/baner1.png");
+}
+
+.slider2 {
+  background-image: url("./images/baner2.png");
+}
+
+.slider3 {
+  background-image: url("./images/baner3.png");
+}
+
+.slider1,
+.slider2,
+.slider3 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.slider1 .info,
+.slider2 .info,
+.slider3 .info {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 155px;
+  padding-left: 33px;
+}
+.slider1 .info h1,
+.slider2 .info h1,
+.slider3 .info h1 {
+  color: #232323;
+  font-size: 110px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.818;
+  text-align: left;
+  margin-bottom: 31px;
+  width: 450px;
+}
+.slider1 .info p,
+.slider2 .info p,
+.slider3 .info p {
+  color: #232323;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 39px;
+  width: 450px;
+}
+.slider1 .info button,
+.slider2 .info button,
+.slider3 .info button {
+  width: 131px;
+  height: 41px;
+  background-color: #111111;
+  border: none;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.categories {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.categories .classified-categories {
+  width: 281px;
+  height: 398px;
+  background-color: #ba0015;
+  margin-top: -190px;
+  z-index: 3;
+}
+.categories .classified-categories .info {
+  padding-top: 104px;
+}
+.categories .classified-categories .info h3 {
+  font-size: 32px;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 22px;
+}
+.categories .classified-categories .info p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+  width: 188px;
+  margin: 0 auto;
+}
+
+.picture-most-popular {
+  background-image: url("./images/picture-most-popular.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 520px;
+  width: 100%;
+  margin-top: 87px;
+}
+.picture-most-popular .info {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+.picture-most-popular .info h1 {
+  color: white;
+  font-size: 130px;
+  text-align: center;
+  width: 480px;
+  line-height: 0.7;
+  font-family: "Roboto Slab", serif;
+  margin-top: -16px;
+}
+.picture-most-popular .info span {
+  font-size: 55px;
+  font-style: italic;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  padding-left: 135px;
+  color: white;
+}
+
+.mp-product-back {
+  background-color: white;
+  height: 413px;
+  display: flex;
+  justify-content: center;
+}
+
+.new-arrivals {
+  height: 520px;
+  background-color: #e6d9d0;
+}
+.new-arrivals .info {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+.new-arrivals .info h1 {
+  font-size: 130px;
+  text-align: center;
+  width: 480px;
+  line-height: 0.7;
+  font-family: "Roboto Slab", serif;
+  margin-top: -16px;
+  margin-bottom: 2px;
+}
+.new-arrivals .info span {
+  font-size: 55px;
+  font-style: italic;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  padding-left: 90px;
+}
+
+.news {
+  width: 100%;
+  height: 574px;
+  display: flex;
+  color: white;
+}
+.news .new-shop,
+.news .new-collection {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.news .new-shop {
+  background-image: url("./images/new-store.png");
+}
+.news .new-collection {
+  background-image: url("./images/new-collection.png");
+}
+.news button {
+  width: 131px;
+  height: 41px;
+  background-color: white;
+  border: none;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3a3a3a;
+}
+.news h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 75px;
+  margin-bottom: 32px;
+}
+.news h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+}
+.news .info {
+  padding-top: 170px;
+  padding-left: 157px;
+}
+
+.latest-news {
+  height: 780px;
+  padding-top: 130px;
+}
+.latest-news .title h3 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Myriad Pro", sans-serif;
+}
+.latest-news .title p {
+  padding-top: 26px;
+  text-align: center;
+  width: 624px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.325;
+}/*# sourceMappingURL=MainPage.css.map */

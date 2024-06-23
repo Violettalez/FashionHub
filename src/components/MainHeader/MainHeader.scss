@@ -1,0 +1,169 @@
+
+$font-family-main: "Open Sans", sans-serif;
+$font-family-logo: "Oxygen", sans-serif;
+$color-black: black;
+$color-grey-light: #f6f6f6;
+$color-grey-dark: #e5e5e5;
+$color-logo: #161c2e;
+$color-logo-highlight: #cb0d22;
+$color-link: #111111;
+$color-link-active: red;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-large: 36px;
+$font-size-basket: 32px;
+$font-size-header: 15px;
+
+@mixin text-links {
+  color: $color-black;
+  text-transform: uppercase;
+  font-size: $font-size-small;
+  font-family: $font-family-main;
+}
+
+@mixin align-elements {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-part1 {
+  background-color: $color-grey-light;
+  height: 35px;
+  display: flex;
+
+  .container {
+    @include align-elements;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .settings {
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    select {
+      @include text-links;
+      border: none;
+      background-color: $color-grey-light;
+      text-align: center;
+      outline: none;
+    }
+  }
+
+  .profile {
+    width: 388px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  a {
+    @include text-links;
+    text-decoration: none;
+
+    .icon {
+      margin-right: 7px;
+      margin-left: 32px;
+    }
+
+    .icon-first {
+      margin-right: 7px;
+    }
+  }
+}
+
+.header-part2 {
+  display: flex;
+  height: 155px;
+  align-items: center;
+
+  .container {
+    @include align-elements;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      font-size: 13px;
+      color: $color-black;
+      padding: 14px 25px;
+      font-family: $font-family-main;
+      outline: none;
+      border: 2px solid #d2d4d2;
+      width: 249px;
+    }
+
+    .search-basket {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    font-size: $font-size-large;
+    text-decoration: none;
+    color: $color-logo;
+    font-family: $font-family-logo;
+    font-weight: 700;
+    font-style: normal;
+
+    span {
+      color: $color-logo-highlight;
+    }
+  }
+
+  .shopping-card {
+    text-decoration: none;
+    color: $color-link;
+
+    .basket {
+      font-size: $font-size-basket;
+      margin-right: 12px;
+      margin-left: 40px;
+    }
+
+    p {
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: $font-size-header;
+      font-family: $font-family-main;
+      padding-right: 10px;
+
+      span {
+        text-transform: lowercase;
+        font-size: 13px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.header-part3 {
+  border: 1px solid $color-grey-dark;
+
+  .container {
+    @include align-elements;
+
+    ul {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        font-size: $font-size-medium;
+        font-family: $font-family-main;
+        text-transform: uppercase;
+        display: block;
+        padding: 19px 0;
+        color: $color-link;
+        font-weight: 700;
+        margin-right: 55px;
+      }
+
+      .sel-page {
+        color: $color-link-active !important;
+      }
+    }
+  }
+}
